@@ -57,9 +57,42 @@ Stores function calls, local variables, and control flow.
 Operates in a Last In, First Out (LIFO) manner.
 Memory allocation is automatic and faster.
 Limited size; usually leads to stack overflow if exceeded (e.g., deep recursion).
+
+
+JavaScript-da stack xotirasi asosan funktsiyalar chaqiruvlari va primiv turlardagi o'zgaruvchilar
+uchun ishlatiladi. Stack xotirasi LIFO (Last In, First Out) tamoyiliga amal qiladi, ya'ni oxirgi kiritilgan
+ma'lumot birinchi bo'lib chiqadi.
+
+Stack xotirasi xususiyatlari:
+
+· Tez kirish: Stackdan ma'lumot olish va o'zgaruvchilarni boshqarish juda tez amalga oshiriladi.
+
+· Avtomatik boshqaruv: Stack xotirasi JavaScript motorlari tomonidan avtomatik boshqariladi.
+
+· Cheklangan o'lcham: Stack hajmi cheklangan va agar ko'plab rekursiv chaqiruvlar yoki katta
+miqdordagi lokal o'zgaruvchilar ishlatilsa, stack overflow xatosi sodir bo'lishi mumkin.
+
+
+
 Heap:
 
 Used for dynamic memory allocation, where variables are allocated and freed as needed.
 Size is generally larger than the stack, but allocation is slower and requires manual management (e.g., using malloc and free in C).
 Memory fragmentation can occur, leading to inefficient use of memory.
-This overview captures the essential aspects of loops, function types, and memory management in programming. If you need more detailed information on any specific topic, feel free to ask!
+This overview captures the essential aspects of loops, function types, and memory management in programming. 
+
+
+JavaScript-da heap xotirasi murakkab ma'lumot turlari uchun ishlatiladi, masalan, obyektlar,
+massivlar va funktsiyalar. Heap xotirasi JavaScript motorlari tomonidan boshqariladi, lekin u dinamik
+bo'lganligi sababli, xotiraga kirish stackdan sekinroq amalga oshiriladi.
+
+Heap xotirasi xususiyatlari:
+
+· Sekin kirish: Heapdagi xotiraga kirish stackdan sekinroq, chunki ma'lumotlar ko'rsatkichlar
+(references) orqali boshqariladi.
+
+. Moslashuvchan o'lcham: Heap xotirasi katta hajmga ega va JavaScript motorlari tomonidan
+avtomatik boshqariladi (Garbage Collection yordamida).
+
+· Murakkab o'zgaruvchilar: Heap asosan obyektlar, massivlar va funksiya obyektlari kabi
+murakkab ma'lumot turlarini saqlash uchun ishlatiladi.
