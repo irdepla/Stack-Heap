@@ -1,0 +1,65 @@
+1. Loops
+Loops are control structures that allow code to be executed repeatedly based on a condition. Common types of loops in programming include:
+
+For Loop: Iterates a specific number of times. Syntax:
+
+javascript
+Copy code
+for (initialization; condition; increment) {
+    // code to execute
+}
+While Loop: Continues to execute as long as a condition is true. Syntax:
+
+javascript
+Copy code
+while (condition) {
+    // code to execute
+}
+Do While Loop: Executes at least once before checking the condition. Syntax:
+
+javascript
+Copy code
+do {
+    // code to execute
+} while (condition);
+2. Types of Functions
+Functions are blocks of code designed to perform a particular task. Types of functions include:
+
+Regular Functions: Standard way to define a function. Syntax:
+
+javascript
+Copy code
+function functionName(parameters) {
+    // code to execute
+}
+Anonymous Functions: Functions without a name, often used in callbacks. Syntax:
+
+javascript
+Copy code
+const myFunc = function(parameters) {
+    // code to execute
+};
+Arrow Functions: Shorter syntax for writing functions, introduced in ES6. Syntax:
+
+javascript
+Copy code
+const myFunc = (parameters) => {
+    // code to execute
+};
+Higher-Order Functions: Functions that take other functions as arguments or return them. E.g., map, filter, reduce.
+
+3. Stack and Heap Memory
+Memory management in programming is critical for efficient resource usage. Two primary areas are:
+
+Stack:
+
+Stores function calls, local variables, and control flow.
+Operates in a Last In, First Out (LIFO) manner.
+Memory allocation is automatic and faster.
+Limited size; usually leads to stack overflow if exceeded (e.g., deep recursion).
+Heap:
+
+Used for dynamic memory allocation, where variables are allocated and freed as needed.
+Size is generally larger than the stack, but allocation is slower and requires manual management (e.g., using malloc and free in C).
+Memory fragmentation can occur, leading to inefficient use of memory.
+This overview captures the essential aspects of loops, function types, and memory management in programming. If you need more detailed information on any specific topic, feel free to ask!
